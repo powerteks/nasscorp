@@ -1,0 +1,119 @@
+.header {
+	position: relative;
+
+	& .header__background {
+		position           : absolute;
+		z-index            : z('header__background');
+		top                : 0;
+		right              : 0;
+		left               : 0;
+		padding-top        : 1847px;
+		background-color   : #797c7e;
+		background-image   : url(./../../assets/img/header-background.jpg);
+		background-repeat  : no-repeat;
+		background-position: center;
+		background-size    : cover;
+
+		&::after {
+			position        : absolute;
+			top             : 0;
+			right           : 0;
+			left            : 0;
+			display         : block;
+			height          : 100%;
+			content         : "";
+			opacity         : .5;
+			background-color: #000000;
+		}
+	}
+	
+	@media (min-width: $min-desktop) {
+	
+		& .header__background {
+			padding-top        : 50.6%;
+		}
+	}
+}
+
+.container_header {
+	
+	@media (min-width: $min-desktop) {
+		padding: 30px 0;
+	}
+	
+}
+
+.header__brand {
+	margin     : 23px 14px;
+	font-size  : 24px;
+	font-weight: 700;
+	line-height: 32px;
+	color      : $color-body;
+
+	.show-menu & {
+		color: $dark-color-text;
+	}
+	
+	&:focus,
+	&:hover {
+		color     : $color-main;
+		box-shadow: none;
+	}
+	
+	&:active {
+		color: $dark-color-text;
+	}
+	
+	@media (min-width: $min-desktop) {
+		margin      : 0;
+	}
+}
+
+.header__button-bar {
+
+	@media (min-width: $min-desktop) {
+		order: 1;
+	}
+}
+
+.header__button {
+	padding         : 10px;
+	color           : $color-body;
+	border          : none;
+	background-color: transparent;
+
+	.show-menu & {
+		color: $color-text;
+	}
+	
+	&:focus,
+	&:hover {
+		color           : $color-main;
+		background-color: transparent;
+		box-shadow      : none;
+	}
+	
+	&:active,
+	&:hover:active {
+		color           : $dark-color-text;
+		border          : none;
+		background-color: transparent;
+		box-shadow      : none;
+	}
+	
+	@media (min-width: $min-desktop) {
+		margin-right: 5px;
+		padding     : 6px;
+	}
+}
+
+.header__icon {
+	width : 24px;
+	height: 24px;
+	
+	@media (min-width: $min-desktop) {
+	
+		width : 20px;
+		height: 20px;
+	}
+}

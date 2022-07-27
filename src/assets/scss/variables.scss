@@ -1,0 +1,62 @@
+// sizes and indents
+$main-unit: 1046px;
+
+// media
+$desktop: 1100px;
+$tablet : 768px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1100px,
+  xxl: 1400px
+);
+
+$min-desktop: $desktop;
+$max-desktop: $desktop - 1;
+$min-tablet : $tablet;
+$max-tablet : $tablet - 1;
+
+// fonts
+$main-font-family: Montserrat, Arial, sans-serif;
+$main-font-size  : 14px;
+$main-line-height: 20px;
+
+// color
+$color-body : #ffffff;
+$color-main : #ffa62b;
+$dark-color : #16697a;
+$light-color: #fafafa;
+
+$color-text      : #737373;
+$dark-color-text : #252b42;
+$light-color-text: #ffffff;
+
+// another
+$indent : 10px;
+
+//mixins
+@mixin flex( $fx-direction, $fx-justify ) {
+	display         : flex;
+	flex-direction  : $fx-direction;
+
+	justify-content : $fx-justify;
+}
+
+
+@mixin reset-indent {
+	margin  : 0;
+	padding : 0;
+}
+
+//function
+@function z( $layer ) {
+	@return map-get( $z-indexes, $layer );
+}
+
+$z-indexes: (
+	'header__background': -1,
+	'focus'             : 999,
+);
