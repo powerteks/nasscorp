@@ -1,0 +1,65 @@
+.container_banner {
+	padding   : 11% 13% 9%;
+	text-align: center;
+	
+	@media (min-width: $min-desktop) {
+		padding: 80px 91px 120px;
+	}
+}
+
+.banner__title {
+	margin-bottom: 40px;
+	text-align   : center;
+	font-family  : $main-font-family;
+	font-size    : 40px;
+	font-weight  : 700;
+	line-height  : 57px;
+	color        : $light-color-text;
+	
+	@media (min-width: $min-desktop) {
+		width      : 730px;
+		margin     : 40px auto;
+		font-size  : 58px;
+		font-weight: 800;
+		line-height: 80px;
+	}
+}
+
+.banner__text {
+	margin     : 40px auto;
+	text-align : center;
+	font-family: $main-font-family;
+	font-size  : 20px;
+	font-weight: 500;
+	line-height: 30px;
+	color      : $light-color-text;
+	
+	@media (min-width: $min-desktop) {
+		width      : 540px;
+	}
+}
+
+.button_banner {
+	margin          : 12.5px 50px;
+	padding         : 10px 36px;
+	font-weight     : 700;
+	color           : $light-color-text;
+	border-color    : $light-color-text;
+	background-color: transparent;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+	
+	@media (min-width: $min-tablet) {
+		margin      : 0 10px 40px 0;
+
+		&:last-of-type {
+			margin      : 0 0 40px;
+		}
+	}
+}

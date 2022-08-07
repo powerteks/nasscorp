@@ -4,6 +4,7 @@ $main-unit: 1046px;
 // media
 $desktop: 1100px;
 $tablet : 768px;
+$lg     : 992px;
 
 $grid-breakpoints: (
   xs: 0,
@@ -18,6 +19,8 @@ $min-desktop: $desktop;
 $max-desktop: $desktop - 1;
 $min-tablet : $tablet;
 $max-tablet : $tablet - 1;
+$min-lg     : $lg;
+$max-lg     : $lg - 1;
 
 // fonts
 $main-font-family: Montserrat, Arial, sans-serif;
@@ -30,9 +33,10 @@ $color-main : #ffa62b;
 $dark-color : #16697a;
 $light-color: #fafafa;
 
-$color-text      : #737373;
-$dark-color-text : #252b42;
-$light-color-text: #ffffff;
+$color-text          : #737373;
+$secondary-color-text: #00A0C1;
+$dark-color-text     : #252b42;
+$light-color-text    : #ffffff;
 
 // another
 $indent : 10px;

@@ -38,3 +38,46 @@ body {
 
 	border   : 0 !important;
 }
+
+.list-reset {
+	margin    : 0;
+	padding   : 0;
+	list-style: none;
+}
+
+.button {
+	padding      : 10px 30px;
+	transition   : .3s;
+	text-align   : center;
+	font-family  : $main-font-family;
+	font-size    : $main-font-size;
+	font-weight  : 400;
+	line-height  : 28px;
+	color        : $secondary-color-text;
+	border       : 1px solid $secondary-color-text;
+	border-radius: 24px;
+	
+	&:focus,
+	&:hover {
+		transition      : .3s;
+		color           : $light-color-text;
+		border-color    : $color-main;
+		background-color: $color-main;
+		box-shadow      : none;
+	}
+	
+	&:active,
+	&:active:focus {
+		transition      : .3s;
+		border-color    : $color-text;
+		background-color: $color-text;
+		box-shadow      : none;
+	}
+}
+
+.advantages_main {
+	
+	@media (min-width: $min-desktop) {
+		transform: translateY(-40px);
+	}
+}

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Container, Button, Navbar , OnToggle } from 'react-bootstrap';
 
-import NavMenu from './../NavMenu';
+import NavMenu    from './../NavMenu';
 import FormSearch from './../FormSearch';
+import Banner     from './../Banner';
+import Advantages from './../Advantages';
 
 function Header () {
 
@@ -20,7 +22,7 @@ function Header () {
 
 	return (
 		<>
-			<Navbar className={ toggleMenu } expand="lg" onToggle={ toggle }>
+			<Navbar className={ toggleMenu } expand="xl" onToggle={ toggle }>
 				<Container className='container_header'>
 					<Navbar.Brand href='#home' className='header__brand me-auto'>Nasscorp</Navbar.Brand>
 					<div className='header__button-bar navbar__button-bar_search'>
@@ -48,6 +50,8 @@ function Header () {
 				</Container>
 			</Navbar>
 			<div className='header__background'></div>
+			<Banner />
+			<Advantages />
 		</>
 	);
 }

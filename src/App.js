@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider, Container } from 'react-bootstrap';
 
-import Header from './components/Header';
+import Header     from './components/Header';
 
 export default function() {
 
@@ -9,10 +9,8 @@ export default function() {
 					<header className='header'>
 						<Header />
 					</header>
-					<main className='b-1'>
-						<Container breakpoints={['xl', 'md', 'xxs']}>
-						
-						</Container>
+					<main>
+						<div className='b-1'></div>
 					</main>
 					<footer className='c-1'>
 						<Container>
