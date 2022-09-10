@@ -46,6 +46,7 @@ body {
 }
 
 .button {
+	box-sizing   : border-box;
 	padding      : 10px 30px;
 	transition   : .3s;
 	text-align   : center;
@@ -81,3 +82,11 @@ body {
 		transform: translateY(-40px);
 	}
 }
+
+// .advantages {
+	
+// 	@media (min-width: $min-tablet) {
+// 		margin-top: -37px;
+// 	}
+// }
+

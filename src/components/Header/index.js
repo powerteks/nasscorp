@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Button, Navbar , OnToggle } from 'react-bootstrap';
+import { Container, Button, Navbar } from 'react-bootstrap';
 
 import NavMenu    from './../NavMenu';
 import FormSearch from './../FormSearch';

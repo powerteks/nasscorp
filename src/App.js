@@ -1,7 +1,9 @@
 import React from 'react';
-import { ThemeProvider, Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
-import Header     from './components/Header';
+import Header   from './components/Header';
+import Cards    from './components/Cards';
+import Features from './components/Features';
 
 export default function() {
 
@@ -10,11 +12,13 @@ export default function() {
 						<Header />
 					</header>
 					<main>
+						<Cards />
+						<Features/>
 						<div className='b-1'></div>
 					</main>
 					<footer className='c-1'>
 						<Container>
 						</Container>
 					</footer>
-					</>;
+				</>;
 }

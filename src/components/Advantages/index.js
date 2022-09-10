@@ -6,7 +6,7 @@ import sprite from './../../assets/img/sprite.svg';
 function advantagesArr () {
 	return [
 		{
-			img : '#ant-design_shop-twotone',
+			img : '#clarity_users-line',
 			span: '1.5K',
 			text: ' happy customers'
 		},
@@ -16,7 +16,7 @@ function advantagesArr () {
 			text: ' countries worldwide'
 		},
 		{
-			img : '#clarity_users-line',
+			img : '#ant-design_shop-twotone',
 			span: '3K',
 			text: ' cases done'
 		},

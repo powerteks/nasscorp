@@ -1,0 +1,159 @@
+.cards {
+	background-color: $light-color;
+}
+
+.container_cards {
+	padding         : 24% 20.7% 33.7%;
+	
+	@media (min-width: $min-tablet) {
+		padding         : 80px 0 104px;
+	}
+}
+
+.cards__list {
+	
+	@media (min-width: $min-tablet) {
+		@include flex(row, stretch);
+
+		flex-wrap: wrap;
+	}
+	
+	@media (min-width: $min-desktop) {
+		flex-wrap: nowrap;
+	}
+}
+
+.cards__item {
+	margin-bottom   : 30px;
+	padding         : 35px 40px;
+	padding-right   : 5px;
+	transition      : .5s;
+	background-color: $color-body;
+	
+	@media (min-width: $min-tablet) {
+		margin-right : 40px;
+		width        : 47%;
+
+		&:nth-child(2),
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	@media (min-width: $min-desktop) {
+		margin-bottom: 0;
+
+		&:nth-child(2) {
+			margin-right: 40px;
+		}
+	}
+	
+	&:focus,
+	&:hover {
+		transition      : .5s;
+		background-color: $dark-color-text;
+	}
+}
+
+.cards__icon {
+	width        : 50px;
+	height       : 50px;
+	transition   : .5s;
+	fill         : $secondary-color-text;
+	
+	.cards__item:focus &,
+	.cards__item:hover & {
+		transition: .5s;
+		fill      : $color-body;
+	}
+}
+
+.cards__title {
+	margin     : 20px 0;
+	transition : .5s;
+	font-family: $main-font-family;
+	font-size  : 16px;
+	font-weight: 500;
+	line-height: 24px;
+	color      : $dark-color-text;
+	
+	.cards__item:focus &,
+	.cards__item:hover & {
+		transition: .5s;
+		color     : $color-body;
+	}
+}
+
+.cards__text {
+	width      : 155px;
+	transition : .5s;
+	font-family: $main-font-family;
+	font-size  : 14px;
+	font-weight: 700;
+	line-height: 20px;
+	color      : $color-text;
+	
+	.cards__item:focus &,
+	.cards__item:hover & {
+		transition: .5s;
+		color     : $color-body;
+	}
+}
+
+.button_cards {
+	font-family     : $main-font-family;
+	font-size       : 14px;
+	font-weight     : 400;
+	line-height     : 28px;
+	color           : $secondary-color-text;
+	border-radius   : 25px;
+	background-color: $color-body;
+	
+	.cards__item:focus &,
+	.cards__item:hover & {
+		transition      : .5s;
+		color           : $color-main;
+		border-color    : $color-body;
+		background-color: $color-body;
+	}
+
+	& span {
+		position: relative;
+		display : inline-block;
+		width   : 16px;
+		height  : 10px;
+
+		.cards__item:focus &,
+		.cards__item:hover & {
+			display: none;
+		}
+
+		&::before,
+		&::after {
+			position: absolute;
+			display : block;
+			content : "";
+		}
+
+		&::before {
+			top             : 50%;
+			right           : 0;
+			left            : 0;
+			width           : 100%;
+			height          : 1px;
+			background-color: $secondary-color-text;
+		}
+
+		&::after {
+			top        : 2px;
+			right      : 0;
+			bottom     : 0;
+			width      : 7px;
+			height     : 7px;
+			transform  : rotate(-45deg);
+			border     : 1px solid $secondary-color-text;
+			border-top : none;
+			border-left: none;
+		}
+	}
+}
