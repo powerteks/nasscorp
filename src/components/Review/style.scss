@@ -1,0 +1,76 @@
+.review {
+	position        : relative;
+	margin-bottom   : 30px;
+	padding         : 30px 37px 30px 82px;
+	background-color: $color-body;
+
+	@media (min-width: $min-desktop) {
+		margin-bottom: 0;
+		margin-left  : 6.6rem;
+		padding      : 30px 60px;
+	}
+}
+
+.review__name {
+	margin-bottom: 0;
+	font-family  : $main-font-family;
+	font-size    : 1.7rem;
+	font-weight  : 700;
+	line-height  : 1.35;
+	color        : $dark-color-text;
+}
+
+.review__profession {
+	margin-bottom: 15px;
+	font-family  : $main-font-family;
+	font-size    : 1rem;
+	font-weight  : 600;
+	line-height  : 1.7;
+	color        : $color-text;
+}
+
+.review__picture {
+	position     : absolute;
+	top          : 28px;
+	left         : -1.9rem;
+	overflow     : hidden;
+	width        : 6.8rem;
+	height       : 6.8rem;
+	border-radius: 50%;
+	
+	@media (min-width: $min-desktop) {
+		left: -4.6rem;
+	}
+}
+
+.review__image {
+	width : 100%;
+	height: 100%;
+}
+
+.review__rating {
+	@include flex(row, stretch);
+
+	margin-bottom: 15px;
+}
+
+.review__star,
+.review__no-star {
+	width : 1.5rem;
+	height: 1.5rem;
+}
+
+.review__icon {
+	width : 1.1rem;
+	height: 1.1rem;
+	fill  : #f3cd03;
+}
+
+.review__description {
+	margin-bottom: 0;
+	font-family  : $main-font-family;
+	font-size    : 1rem;
+	font-weight  : 600;
+	line-height  : 1.4;
+	color        : $color-text;
+}

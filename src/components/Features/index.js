@@ -3,6 +3,7 @@ import { Container, Button } from 'react-bootstrap';
 
 import sprite from './../../assets/img/sprite.svg';
 import cover from './../../assets/img/cover.jpg';
+import BlockText from '../BlockText';
 
 function playVideo () {
 	<video className='features__video' controls='controls' autoPlay='' src=''></video>;
@@ -16,16 +17,15 @@ function Features () {
 
 	return <section className='features'>
 					<Container className='features_container' breakpoints={['xl', 'md', 'xxs']}>
-						<div className='features__intro'>
-							<h3 className='features__title'>We are providing best business service.</h3>
-							<p className='features__text'>Problems trying to resolve the&nbsp;conflict between the&nbsp;two major realms of Classical physics: Newtonian mechanics</p>
-						</div>
+						<BlockText className='features_block-text'
+							title='We are providing best business service'
+							text='Problems trying to resolve the&nbsp;conflict between the&nbsp;two major realms of Classical physics: Newtonian mechanics' />
 						<div className='features__block'>
 							<div className='features__block-video'>
 								{ !isShow && 
 								<>
 									<picture className='features__picture'>
-										<img className='features__image' src={cover} alt='Picture video' />
+										<img className='features__image' src={ cover } alt='Picture video' />
 									</picture>
 									<button className='features__button' onClick={ showVideo }><span className='visually-hidden'>Play</span></button>
 								</>
@@ -35,8 +35,11 @@ function Features () {
 								}
 							</div>
 							<div className='features__block-description'>
-								<h3 className='features__title features__title_description'>Most trusted in our field</h3>
-								<p className='features__text features__text_description'>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+								<BlockText className='description_block-text'
+									class_title='features_title'
+									title='Most trusted in our field'
+									class_text='features_text'
+									text='Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.' />
 								<ul className='features__list list-reset'>
 									<li className='features__item'>
 										<svg className='features__icon' width='32px' height='32px'><use xlinkHref={ sprite + '#people' }></use></svg>

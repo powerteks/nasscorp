@@ -42,7 +42,7 @@ function Cards () {
 						{ cards.map((item, i) => (
 							<li className='cards__item' key={ i }>
 								<svg className='cards__icon' width='48px' height='48px'><use xlinkHref={ sprite + item.img }></use></svg>
-								<h3 className='cards__title'>{ item.title}</h3>
+								<h3 className='cards__title'>{ item.title }</h3>
 								<p className='cards__text'>{ item.text }</p>
 								<Button className='button button_cards' href={ item.link }>More <span></span></Button>
 							</li>

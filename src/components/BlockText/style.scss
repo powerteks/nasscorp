@@ -1,0 +1,44 @@
+.block-text {
+	
+	@media (min-width: $min-desktop) {
+		width : 48%;
+	}
+}
+
+.block-text__title {
+	margin     : 72px auto 10px;
+	text-align : center;
+	font-family: $main-font-family;
+	font-size  : 40px;
+	font-weight: 700;
+	line-height: 57px;
+	color      : $dark-color-text;
+
+	&_description {
+		text-align: left;
+		
+		@media (min-width: $min-desktop) {
+			margin-top: 20px;
+		}
+	}
+}
+
+.block-text__text {
+	width      : 68%;
+	margin     : 10px auto 100px;
+	text-align : center;
+	font-family: $main-font-family;
+	font-weight: 500;
+	line-height: 20px;
+	color      : $color-text;
+	
+	@media (min-width: $min-desktop) {
+		width: 100%;
+	}
+
+	&_description {
+		width        : 100%;
+		margin-bottom: 50px;
+		text-align   : left;
+	}
+}

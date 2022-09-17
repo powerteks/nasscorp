@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import Header   from './components/Header';
 import Cards    from './components/Cards';
 import Features from './components/Features';
+import Reviews  from './components/Reviews';
 
 export default function() {
 
@@ -14,6 +15,7 @@ export default function() {
 					<main>
 						<Cards />
 						<Features/>
+						<Reviews/>
 						<div className='b-1'></div>
 					</main>
 					<footer className='c-1'>
