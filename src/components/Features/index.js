@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Button } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 import sprite from './../../assets/img/sprite.svg';
 import cover from './../../assets/img/cover.jpg';
