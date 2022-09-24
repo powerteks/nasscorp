@@ -7,6 +7,7 @@ import Features from './components/Features';
 import Reviews  from './components/Reviews';
 import Team     from './components/Team';
 import Branches from './components/Branches';
+import FormEntry from './components/FormEntry';
 
 export default function() {
 
@@ -20,6 +21,7 @@ export default function() {
 						<Reviews/>
 						<Team/>
 						<Branches/>
+						<FormEntry/>
 						<div className='b-1'></div>
 					</main>
 					<footer className='c-1'>

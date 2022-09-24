@@ -3,7 +3,7 @@
 	background-color: $dark-color;
 	
 	@media (min-width: $min-desktop) {
-		padding    : 75px 0 114px;
+		padding: 75px 0 114px;
 	}
 }
 
@@ -27,13 +27,13 @@
 
 .reviews_title {
 	margin-top: 0;
-	color     : $color-body;
+	color     : $light-color-text;
 }
 
 .reviews_text {
 	width        : 100%;
 	margin-bottom: 60px;
-	color        : $color-body;
+	color        : $light-color-text;
 	
 	@media (min-width: $min-desktop) {
 		margin-bottom: 95px;
