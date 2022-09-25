@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import BlockText from './../BlockText';
-import Review from './../Review';
+import Review    from './../Review';
 
 import men1 from './../../assets/img/men-1.jpg';
 import men2 from './../../assets/img/men-2.jpg';
